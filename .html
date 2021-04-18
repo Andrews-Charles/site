@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <script type="text/javascript">
+        var value = 0;
+        function incrementFunction() {
+            var counter;
+            counter = document.getElementById("counter");
+            value = value + 1;
+            counter.innerHTML = value;
+        }
+
+        function start() {
+            var button;
+            button = document.getElementById("incrementButton");
+            button.addEventListener("click", incrementFunction, false);
+        }
+
+        window.addEventListener("load", start, false);
+    </script>
+</head>
+<body>
+<div id="counter">0</div>
+<button id="incrementButton">Increment</button>
+
+</body>
+</html>
